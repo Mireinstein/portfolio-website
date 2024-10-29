@@ -17,16 +17,40 @@ const ButtonPrimary = ({
     icon,
     classes
 }) => {
-  return (
-    <div>Button</div>
-  )
+    if (href) {
+            return (
+                <a
+                href={href}
+                target={target}
+                className={`btn btn-primary ${classes}`}
+
+                >
+                    {label}
+
+                    {icon ? <span className="material-symbols-rounded" aria-hidden="true">{icon}</span> : undefined}
+                </a>
+        )
+    }
+    else {
+        return (
+            <button className={`btn btn-primary ${classes}`}>
+
+                {label}
+                {icon ? <span className="material-symbols-rounded" aria-hidden="true">{icon}</span> : undefined}
+            </button>
+        )
+
+    }
+
 }
 
 ButtonPrimary.propTypes = {
     label: PropTypes.string.isRequired,
-    href: PropTypes.string
-    
-
+    href: PropTypes.string,
+    target: PropTypes.string,
+    icon: PropTypes.string,
+    classes: PropTypes.string
+}
 
 export {
     ButtonPrimary

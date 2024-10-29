@@ -4,8 +4,10 @@
  */
 
 
+// Components
+import { ButtonPrimary } from "./Button"
 
-import React from 'react'
+
 
 const Hero = () => {
   return (
@@ -40,7 +42,9 @@ const Hero = () => {
                 </h2>
 
                 <div className='flex items-center gap-3'>
-                    ButtonPrimary 
+                    <ButtonPrimary
+                        label="My Resume"
+                        icon="description" /> 
 
                     ButtonOutline
 
