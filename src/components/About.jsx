@@ -6,20 +6,20 @@
 
 
 // Text
-const welcome_paragraph = `Hi, I’m Aime Cesaire—a dedicated problem solver with a deep fascination
+const welcome_paragraph = `Hi, I’m Aime Cesaire— a dedicated problem solver with a deep fascination
                         for how systems are built, optimized, and pushed to their limits.
-                        I’m a full-stack AI and ML developer with experience that spans software development,
+                        I’m a full-stack developer with experience that spans artificial intelligence, machine learning,
                         penetration testing, and cryptography. My background also extends into computer networks,
-                        IT infrastructure, and cloud computing.Whether I'm developing algorithms, testing systems,
+                        IT infrastructure, and cloud computing. Whether I'm developing algorithms, pen-testing systems,
                         or creating data-driven applications, I’m motivated by the drive to learn, build, and innovate.`
 
 const aboutItems = [
     {
-        label: "Projects done",
+        label: "Projects",
         number: 10
     },
     {
-        label:"Programming Languages",
+        label:"Languages",
         number: 5
     },
     {

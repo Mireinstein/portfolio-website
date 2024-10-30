@@ -68,7 +68,7 @@ const Skills = () => {
           My Tech Stack
         </h2>
         <p className="text-zinc-400 mt-3 mb-8 max-w-[50ch]" >
-          Some of the tools I have used in my most recent projects.
+          Some of the tools I am currently using.
         </p>
 
         <div className="grid gap-3 grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))]">
