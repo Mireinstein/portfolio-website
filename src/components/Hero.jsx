@@ -5,7 +5,7 @@
 
 
 // Components
-import { ButtonPrimary } from "./Button"
+import { ButtonPrimary, ButtonOutline } from "./Button"
 
 
 
@@ -38,7 +38,7 @@ const Hero = () => {
                 </div>
 
                 <h2 className='headline-1 max-w-[15ch] sm:max-w-[20ch] lg:max-w-[15ch] mt-5 mb-8 lg:mb-10'>
-                    Building and breaking software
+                    Building and breaking modern systems
                 </h2>
 
                 <div className='flex items-center gap-3'>
@@ -46,7 +46,11 @@ const Hero = () => {
                         label="My Resume"
                         icon="description" /> 
 
-                    ButtonOutline
+                    <ButtonOutline
+                        href="#about"
+                        label="Scroll down"
+                        icon = "keyboard_double_arrow_down"/>
+                        
 
                 </div>
 
