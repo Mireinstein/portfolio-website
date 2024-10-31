@@ -42,20 +42,15 @@ const ProjectCard = (
 
             </div>
 
-            <div className="relative rounded-lg w-10 h-10 grid place-items-center text-zinc-950 shrink-0">
-                <span
-                
-                //  className="material-symbols-rounded relative"
-                 aria-hidden="true"
+            <div className="relative rounded-full w-10 h-10 grid place-items-center text-zinc-950 shrink-0 hover:bg-black">
+                <span aria-hidden="true"
                  >
                     <img src="./images/github-mark-white.png" alt="" />
-
-                    {/* arrow_outward */}
-                    <a
-                        href={link}
-                        target='_blank'
-                        className="absolute inset-0"
-                    ></a>
+                        <a
+                            href={link}
+                            target='_blank'
+                            className="absolute inset-0"
+                        ></a>
                  </span>
             </div>
         </div>

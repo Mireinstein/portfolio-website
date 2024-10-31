@@ -8,51 +8,52 @@ import ProjectCard from "./ProjectCard"
 
 const works = [
     {
-      imgSrc: "/images/ai.png",
+      imgSrc: "/images/ai.jpeg",
       title: "Intelligent Pacman agents",
       tags: [ "Adversarial Search","Reinforcement Learning", "Python"],
-      link: ""
+      link: "https://github.com/AimeCesaireM/AI-Projects"
     },
     {
-      imgSrc: "/images/ml.png",
+      imgSrc: "/images/ml.jpg",
       title: "English Premier League Analytics",
       tags: ["Machine Learning", "Regression models", "Python"],
-      link: ""
+      link: "https://github.com/AimeCesaireM/PremierLeagueMLProject"
     },
     {
-      imgSrc: "/images/networks.png",
+      imgSrc: "/images/networks.jpeg",
       title: "Network Layer Simulation",
       tags: ["Network Protocols", "CRC Error Handling", "Java"],
-      link: ""
+      link: "https://github.com/AimeCesaireM/routing"
    },
    {
-      imgSrc: "/images/security.png",
+      imgSrc: "/images/security.jpeg",
       title: "Concealed data extraction",
       tags: ["Steganography", "Pixel Manipulation", "Java"],
-      link: ""
+      link: "https://github.com/AimeCesaireM/Steganography-Detector"
    },
     {
-      imgSrc: "/images/systems.png",
+      imgSrc: "/images/systems.jpeg",
       title: "Heap Allocation Optimizations",
       tags: ["Systems", "RAM", "C"],
-      link: ""
+      link: "https://github.com/AimeCesaireM/best-fit-heap-allocator"
     },
     {
-      imgSrc: "/images/games.png",
+      imgSrc: "/images/game-2.png",
       title:"Brickbreaker Game",
       tags:["Unity Engine", "C#"],
-      link: ""
+      link: "https://github.com/AimeCesaireM/Brick-Breaker"
     },
     {
-      imgSrc: "/images/crypto.png",
+      imgSrc: "/images/crypto.jpeg",
       title: "Elliptic Curve Cryptography",
       tags: ["Cryptanalysis", "Abstract Algebra", "Python"],
-      link:""
+      link: "https://github.com/AimeCesaireM/ecc-cryptography"
     },
     {
       imgSrc: "/images/naona.png",
       title: "LAN Video Chat App",
       tags: ["WebRTC", "Socket.io", "JavaScript"],
+      link: "https://github.com/AimeCesaireM/Naona"
     }
 
 ]
@@ -65,8 +66,8 @@ const Projects = () => {
       >
         <div className="container">
 
-          <h2 className="headline-2 mb-8">
-            My Portfolio Highlights
+          <h2 className="headline-2 mb-8 reveal-up">
+            My Highlight Projects
           </h2>
 
           <div className="grid gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))]">
@@ -76,7 +77,9 @@ const Projects = () => {
                 imgSrc={imgSrc}
                 title={title}
                 tags={tags}
-                link={link} />
+                link={link}
+                classes={"reveal-up"}
+                 />
 
             ))
               

@@ -15,6 +15,7 @@ const ButtonPrimary = ({
     target = '_self',
     label,
     icon,
+    download,
     classes
 }) => {
     if (href) {
@@ -22,6 +23,7 @@ const ButtonPrimary = ({
                 <a
                 href={href}
                 target={target}
+                download={download}
                 className={`btn btn-primary ${classes}`}
 
                 >
@@ -49,6 +51,7 @@ ButtonPrimary.propTypes = {
     href: PropTypes.string,
     target: PropTypes.string,
     icon: PropTypes.string,
+    download: PropTypes.string,
     classes: PropTypes.string
 }
 

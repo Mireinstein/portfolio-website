@@ -64,10 +64,10 @@ const Skills = () => {
   return (
     <section className="section">
       <div className="container">
-        <h2 className="headline-2">
+        <h2 className="headline-2 reveal-up">
           My Tech Stack
         </h2>
-        <p className="text-zinc-400 mt-3 mb-8 max-w-[50ch]" >
+        <p className="text-zinc-400 mt-3 mb-8 max-w-[50ch] reveal-up" >
           Some of the tools I am currently using.
         </p>
 
@@ -79,6 +79,7 @@ const Skills = () => {
               title={title}
               desc={desc}
               link={link}
+              classes = "reveal-up"
             />
           ))}
         </div>
