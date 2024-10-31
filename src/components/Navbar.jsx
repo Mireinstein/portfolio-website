@@ -10,6 +10,7 @@ import PropTypes from 'prop-types'
 
 const Navbar = ({ navOpen}) => {
     const lastActiveLink = useRef()
+    
     const activeBox = useRef()
 
     const initActiveBox = () => {

@@ -37,7 +37,7 @@ const About = () => {
         <div className="container">
             <div className="bg-zinc-800/50 p-7 rounded-2xl md:p-12 reveal-up">
 
-                <p className="text-zinc-300 mb-4 md:mb-8 md:text-xl md:max-w-[60ch]">
+                <p className="text-zinc-300 mb-4 md:mb-8 md:text-xl md:max-w-[60ch] reveal-up">
                     {welcome_paragraph}
 
                 </p>
@@ -53,13 +53,6 @@ const About = () => {
                             </div>
                         ))
                     }
-
-                {/* <img
-                 src="/images/logo.png"
-                 alt="Logo"
-                 width={50}
-                 height={50}
-                 className="ml-auto md:w-[60px] md:h-[60px]" /> */}
 
                 </div>
 

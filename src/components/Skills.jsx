@@ -10,49 +10,49 @@ import SkillCard from "./SkillCard"
 
 const skillItems = [
   {
-      imgSrc: "/images/python.png",
+      imgSrc: "./images/python.png",
       title: "Python",
       desc: "AI and ML Development",
       link: "https://www.python.org/"
   },
   {
-      imgSrc: "/images/java.svg",
+      imgSrc: "./images/java.svg",
       title: "Java",
       desc: " App Development",
       link: "https://www.java.com/en/"
   },
   {
-      imgSrc: "/images/typescript.png",
+      imgSrc: "./images/typescript.png",
       title: "TypeScript",
       desc: "Web Development",
       link: "https://www.typescriptlang.org/"
   },
   {
-      imgSrc: "/images/nodejs.svg",
+      imgSrc: "./images/nodejs.svg",
       title: "NodeJS",
       desc: "Web Server",
       link: "https://nodejs.org/en/"
   },
   {
-      imgSrc: "/images/react.png",
+      imgSrc: "./images/react.png",
       title: "React",
       desc: "Frontend Framework",
       link: "https://reactjs.org/"
   },
   {
-      imgSrc: "/images/tailwind.png",
+      imgSrc: "./images/tailwind.png",
       title: "TailwindCSS",
       desc: "CSS Framework",
       link: "https://tailwindcss.com/"
   },
   {
-      imgSrc: "/images/mysql.png",
+      imgSrc: "./images/mysql.png",
       title: "MySQL",
       desc: "Database",
       link: "https://www.mysql.com/"
   },
   {
-      imgSrc: "/images/azure.png",
+      imgSrc: "./images/azure.png",
       title: "Azure",
       desc: "Cloud",
       link: "https://azure.microsoft.com/"
@@ -79,7 +79,7 @@ const Skills = () => {
               title={title}
               desc={desc}
               link={link}
-              classes = "reveal-up"
+              classes = " reveal-up"
             />
           ))}
         </div>
