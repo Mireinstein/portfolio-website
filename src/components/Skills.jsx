@@ -28,6 +28,12 @@ const skillItems = [
       link: "https://www.typescriptlang.org/"
   },
   {
+    imgSrc: "./images/solidity.svg",
+    title: "Solidity",
+    desc: "Smart Contract Development",
+    link: "https://docs.soliditylang.org/"
+  },
+  {
       imgSrc: "./images/nodejs.svg",
       title: "NodeJS",
       desc: "Web Server",
@@ -44,6 +50,12 @@ const skillItems = [
       title: "TailwindCSS",
       desc: "CSS Framework",
       link: "https://tailwindcss.com/"
+  },
+  {
+      imgSrc: "./images/bootstrap-logo.svg",
+      title: "Bootstrap",
+      desc: "CSS Framework",
+      link: "https://getbootstrap.com/"
   },
   {
       imgSrc: "./images/mysql.png",
