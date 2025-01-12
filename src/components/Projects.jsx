@@ -12,7 +12,7 @@ const works = [
     title: "Mammoth Rumble - A decentralized voting platform",
     tags: ["Solidiy", "Web3", "React", "Bootstrap", "Ethers API" ],
     link: "http://github.com/AimeCesaireM/Decentralized-Voting",
-    website: "http://34.44.182.12/"
+    website: "http://34.16.36.118/"
 
   },
   {
