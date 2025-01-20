@@ -17,7 +17,7 @@ const works = [
   },
   {
     imgSrc: "./images/ai.jpeg",
-    title: "Intelligent Pacman agents",
+    title: "Intelligent Pacman bots",
     tags: ["Adversarial Search", "Reinforcement Learning", "Python"],
     link: "https://github.com/AimeCesaireM/AI-Projects",
     website: ""

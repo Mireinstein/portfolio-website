@@ -5,11 +5,15 @@
 /*Base*/
 
 html {
-    scroll-behavior: smooth
-    }
+    @apply scroll-smooth;
+}
 
 body {
-    @apply bg-zinc-900 text-zinc-50
+    @apply bg-zinc-900 text-zinc-50 font-sans antialiased leading-relaxed;
+}
+
+.logo{
+    padding-top: 20%;
 }
 
 /* Typography */
@@ -21,22 +25,39 @@ body {
     -webkit-text-fill-color: transparent
 }
 
-.headline-1{
-    @apply text-5xl leading-tight font-semibold lg:text-[55px] lg:leading-[1.15]
+.headline-1 {
+    @apply text-5xl font-semibold leading-tight text-gray-900  lg:text-[55px] lg:leading-[1.15] tracking-tight sm:text-4xl sm:leading-snug;
+    transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
 }
+
+.headline-1:hover {
+    @apply text-blue-500;
+    transform: translateY(-10px);
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
 
 .headline-2 {
-    @apply text-3xl font-semibold lg:text-4xl lg:leading-tight
+    @apply text-3xl font-semibold text-gray-800 lg:text-4xl lg:leading-tight tracking-tight sm:text-2xl sm:leading-snug;
+    transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
 }
+
+.headline-2:hover {
+    @apply text-blue-500;
+    transform: translateY(-4px);
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
 
 .title-1 {
-    @apply text-[22px] font-normal
+    @apply text-[22px] font-normal text-gray-700 leading-relaxed tracking-tight sm:text-xl sm:leading-relaxed md:text-2xl md:leading-snug;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
-
-
-
-
+.title-1:hover {
+    @apply text-blue-600;
+    transform: translateY(-2px);
+}
 
 /* Utilities */
 
@@ -66,13 +87,23 @@ body {
     @apply translate-y-20 opacity-0
 }
 
-
 /*Components*/
 
 /*Menu button*/
 .menu-btn {
-   @apply w-10 h-10 grid place-items-center bg-zinc-50/10 rounded-xl ring-inset ring-1 ring-zinc-50/[0.02]
-    backdrop-blur-2xl hover:bg-zinc-50/15 transition-[transform,background-color] active:scale-95
+    @apply w-10 h-10 grid place-items-center bg-zinc-50/10 rounded-xl ring-inset ring-1 ring-zinc-50/[0.08] backdrop-blur-lg hover:bg-zinc-50/20 active:scale-95 transition-all ease-in-out duration-200 shadow-lg ;
+}
+
+/* Hover effect */
+.menu-btn:hover {
+    @apply bg-zinc-50/15;
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.15); /* Subtle glow effect */
+}
+
+/* Focus effect for accessibility */
+.menu-btn:focus {
+    @apply ring-2 ring-blue-500;
 }
 
 /*Navbar*/
@@ -95,7 +126,7 @@ body {
 }
 
 .navbar .active-box {
-    @apply absolute bg-zinc-50 rounded-lg -z-10 transition-[top,left] duration-500
+    @apply absolute bg-zinc-50 rounded-3xl -z-10 transition-[top,left] duration-500
 }
 
 /* Button */
@@ -119,3 +150,4 @@ body {
 .btn-outline {
     @apply h-10 bg-zinc-800 hover:bg-zinc-700 active:bg-zinc-800
 }
+

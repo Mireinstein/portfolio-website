@@ -10,36 +10,42 @@ const ProjectCard = ({ imgSrc, title, tags, link, website, classes }) => {
   return (
     <div
       className={
-        `relative p-4 rounded-2xl bg-zinc-800
-         hover:bg-zinc-700/50 active:bg-zinc-700/60 ring-1 ring-inset
-          ring-zinc-50/5 transition-colors ` + classes
+        `relative p-5 rounded-3xl bg-zinc-800 
+     hover:bg-zinc-700/60 active:bg-zinc-700/70 shadow-lg hover:shadow-xl 
+     transition-all duration-300 ring-1 ring-inset ring-zinc-50/10 ` + classes
       }
     >
-      <figure className="img-box aspect-square rounded-lg mb-4">
-        <img src={imgSrc} alt={title} loading="lazy" className="img-cover" />
+      <figure className="img-box aspect-square rounded-xl overflow-hidden mb-4">
+        <img
+          src={imgSrc}
+          alt={title}
+          loading="lazy"
+          className="object-cover w-full h-full transition-transform duration-300 hover:scale-105"
+        />
       </figure>
 
       <div className="flex items-center justify-between gap-4">
         <div>
-          <h3 className="title-1 mb-3">{title}</h3>
+          <h3 className="text-xl font-semibold text-white mb-2">{title}</h3>
 
-          {website !== "" && (
-            <p className="text-sm text-color-secondary">
+          {website && (
+            <p className="text-sm">
               <a
                 href={website}
                 target="_blank"
-                className="text-blue-500 text-xl font-bold hover:underline"
+                rel="noopener noreferrer"
+                className="text-blue-400 hover:text-blue-300 font-medium transition-colors"
               >
-                Live Website
+                Live Demo →
               </a>
             </p>
           )}
 
-          <div className="flex flex-wrap items-center gap-2">
+          <div className="flex flex-wrap items-center gap-2 mt-3">
             {tags.map((label, key) => (
               <span
                 key={key}
-                className=" h-10 text-sm text-zinc-400 bg-zinc-50/5 grid items-center px-3 rounded-lg"
+                className="px-3 py-1 text-sm text-zinc-300 bg-zinc-50/5 rounded-full border border-zinc-600"
               >
                 {label}
               </span>
@@ -61,8 +67,9 @@ const ProjectCard = ({ imgSrc, title, tags, link, website, classes }) => {
 ProjectCard.propTypes = {
   imgSrc: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  tags: PropTypes.array.isRequired,
+  tags: PropTypes.arrayOf(PropTypes.string).isRequired,
   link: PropTypes.string.isRequired,
+  website: PropTypes.string,
   classes: PropTypes.string,
 };
 

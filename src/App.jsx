@@ -1,5 +1,5 @@
 /**
- * @copyright 2024 Aime Cesaire
+ * @copyright 2025 Aime Cesaire Mugishawayo
  * @license Apache-2.0
  */
 
@@ -8,10 +8,10 @@ import { ReactLenis } from 'lenis/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useGSAP } from '@gsap/react'
+import { useState, useEffect } from 'react'
 
 // Register GSAP plugins
-gsap.registerPlugin(useGSAP,ScrollTrigger)
-
+gsap.registerPlugin(useGSAP, ScrollTrigger)
 
 // Components
 import Header from "./components/Header"
@@ -21,14 +21,11 @@ import Skills from "./components/Skills"
 import Projects from "./components/Projects"
 import Contact from "./components/Contact"
 
-
-
-
 const App = () => {
 
     useGSAP(() => {
         const elements = gsap.utils.toArray(".reveal-up")
-    
+
         elements.forEach(element => {
             gsap.to(element, {
                 scrollTrigger: {
@@ -43,11 +40,8 @@ const App = () => {
                 ease: 'power2.out'
             })
         })
-
     })
-    
-   
-    
+
     return (
         <ReactLenis root>
             <Header />
@@ -59,8 +53,7 @@ const App = () => {
                 <Contact />
             </main>
         </ReactLenis>
-        
     )
 }
 
-export default App
+export default App;

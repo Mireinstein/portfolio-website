@@ -28,6 +28,12 @@ const skillItems = [
       link: "https://www.typescriptlang.org/"
   },
   {
+    imgSrc: "./images/flutter.png",
+    title: "Flutter",
+    desc: "Mobile Development",
+    link: "https://flutter.dev/"
+  },
+  {
     imgSrc: "./images/solidity.svg",
     title: "Solidity",
     desc: "Smart Contract Development",
@@ -36,7 +42,7 @@ const skillItems = [
   {
       imgSrc: "./images/nodejs.svg",
       title: "NodeJS",
-      desc: "Web Server",
+      desc: "Backend development",
       link: "https://nodejs.org/en/"
   },
   {
@@ -66,7 +72,7 @@ const skillItems = [
   {
       imgSrc: "./images/azure.png",
       title: "Azure",
-      desc: "Cloud",
+      desc: "Cloud Computing",
       link: "https://azure.microsoft.com/"
   }
 ]
