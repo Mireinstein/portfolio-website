@@ -6,7 +6,7 @@ const Footer = () => {
             <div className=" container mx-auto px-4 lg:px-8 xl:max-w-6xl">
                 <div className="flex flex-col md:flex-row justify-between items-center">
                     <div className="mb-4 md:mb-0">
-                        <a href="/" className="logo flex items-center">
+                        <a href="/portfolio-website/" className="logo flex items-center">
                             <img
                                 className="logo-img"
                                 src="./images/logo.png"
