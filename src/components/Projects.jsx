@@ -8,7 +8,6 @@ import ProjectCard from "./ProjectCard";
 
 const works = [
   {
-    imgSrc: "./images/rumble-homepage.png",
     title: "Mammoth Rumble - A decentralized voting platform",
     tags: ["Solidiy", "Web3", "React", "Bootstrap", "Ethers API" ],
     link: "http://github.com/AimeCesaireM/Decentralized-Voting",
@@ -16,67 +15,60 @@ const works = [
 
   },
   {
-    imgSrc: "./images/ai.jpeg",
     title: "Intelligent Pacman bots",
     tags: ["Adversarial Search", "Reinforcement Learning", "Python"],
     link: "https://github.com/AimeCesaireM/AI-Projects",
     website: ""
   },
   {
-    imgSrc: "./images/ml.jpg",
     title: "Soccer Data Analytics",
     tags: ["Machine Learning", "Data Science", "Regression models", "Python"],
     link: "https://github.com/AimeCesaireM/PremierLeagueMLProject",
     website: ""
   },
   {
-    imgSrc: "./images/networks.jpeg",
     title: "Network Infrastructure Simulation",
     tags: ["Network Protocols", "CRC Error Handling", "Java"],
     link: "https://github.com/AimeCesaireM/routing",
     website: ""
   },
   {
-    imgSrc: "./images/security.jpeg",
     title: "Phase1 - A steganography detector",
     tags: ["Steganography", "Pixel Manipulation", "Java"],
     link: "https://github.com/AimeCesaireM/Steganography-Detector",
     website: ""
   },
   {
-    imgSrc: "./images/game-2.png",
     title: "Brickbreaker Game in Unity Engine",
     tags: ["Unity Engine", "C#", "Object Oriented Programming"],
     link: "https://github.com/AimeCesaireM/Brick-Breaker",
     website: ""
   },
   {
-    imgSrc: "./images/crypto.jpeg",
     title: "ouispar - tool suite for elliptic curve cryptography",
     tags: ["Cryptanalysis", "Abstract Algebra", "Python"],
     link: "https://github.com/AimeCesaireM/ecc-cryptography",
     website: ""
   },
   {
-    imgSrc: "./images/naona.png",
-    title: "Naona -a LAN Video Chat App",
+    title: "Naona- A LAN Video Chat App",
     tags: ["WebRTC", "Socket.io", "JavaScript"],
     link: "https://github.com/AimeCesaireM/Naona",
     website: ""
   },
 ];
 
-const Projects = () => {
+const Projects = ({theme}) => {
   return (
     <section id="projects" className="section">
       <div className="container">
         <h2 className="headline-2 mb-8 reveal-up">My Highlight Projects</h2>
 
-        <div className="grid gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))]">
-          {works.map(({ imgSrc, title, tags, link, website }, key) => (
+        <div className="grid gap-x-3 gap-y-3 grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))]">
+          {works.map(({ title, tags, link, website }, key) => (
             <ProjectCard
+              theme={theme}
               key={key}
-              imgSrc={imgSrc}
               title={title}
               tags={tags}
               link={link}

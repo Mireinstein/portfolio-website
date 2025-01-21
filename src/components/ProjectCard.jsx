@@ -6,27 +6,19 @@
 //Node modules
 import PropTypes from "prop-types";
 
-const ProjectCard = ({ imgSrc, title, tags, link, website, classes }) => {
+const ProjectCard = ({ theme, title, tags, link, website, classes }) => {
   return (
     <div
       className={
-        `relative p-5 rounded-3xl bg-zinc-800 
-     hover:bg-zinc-700/60 active:bg-zinc-700/70 shadow-lg hover:shadow-xl 
+        `card relative p-5 rounded-3xl  bg-zinc-400
+     hover:bg-zinc-400/70 active:bg-zinc-200/70 shadow-lg hover:shadow-xl 
      transition-all duration-300 ring-1 ring-inset ring-zinc-50/10 ` + classes
       }
     >
-      <figure className="img-box aspect-square rounded-xl overflow-hidden mb-4">
-        <img
-          src={imgSrc}
-          alt={title}
-          loading="lazy"
-          className="object-cover w-full h-full transition-transform duration-300 hover:scale-105"
-        />
-      </figure>
 
       <div className="flex items-center justify-between gap-4">
         <div>
-          <h3 className="text-xl font-semibold text-white mb-2">{title}</h3>
+          <h3 className="text-xl font-semibold mb-2">{title}</h3>
 
           {website && (
             <p className="text-sm">
@@ -34,9 +26,9 @@ const ProjectCard = ({ imgSrc, title, tags, link, website, classes }) => {
                 href={website}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-400 hover:text-blue-300 font-medium transition-colors"
+                className="text-sky-700/100 hover:text-blue-500 font-medium transition-colors"
               >
-                Live Demo →
+                Published Project →
               </a>
             </p>
           )}
@@ -45,7 +37,7 @@ const ProjectCard = ({ imgSrc, title, tags, link, website, classes }) => {
             {tags.map((label, key) => (
               <span
                 key={key}
-                className="px-3 py-1 text-sm text-zinc-300 bg-zinc-50/5 rounded-full border border-zinc-600"
+                className="px-3 py-1 text-sm bg-zinc-50/5 rounded-full border border-zinc-600"
               >
                 {label}
               </span>
@@ -55,7 +47,7 @@ const ProjectCard = ({ imgSrc, title, tags, link, website, classes }) => {
 
         <div className="relative rounded-full w-10 h-10 grid place-items-center text-zinc-950 shrink-0 hover:bg-black">
           <span aria-hidden="true">
-            <img src="./images/github-mark-white.png" alt="" />
+            <img src= {theme === "dark" ? "./images/github-mark-white.png" : "./images/github-mark.png"} alt="" />
             <a href={link} target="_blank" className="absolute inset-0"></a>
           </span>
         </div>
@@ -65,7 +57,7 @@ const ProjectCard = ({ imgSrc, title, tags, link, website, classes }) => {
 };
 
 ProjectCard.propTypes = {
-  imgSrc: PropTypes.string.isRequired,
+  theme: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   tags: PropTypes.arrayOf(PropTypes.string).isRequired,
   link: PropTypes.string.isRequired,
