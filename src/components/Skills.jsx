@@ -107,3 +107,19 @@ const Skills = () => {
 }
 
 export default Skills
+
+/*
+Icons used in this project are licensed under Creative Commons. You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensors endorse you or your use.
+
+- Python icon by Python Software Foundation, CC BY-SA 3.0
+- Java icon by Oracle, CC BY-SA 3.0
+- TypeScript icon by Microsoft, CC BY-SA 3.0
+- Flutter icon by Google, CC BY-SA 3.0
+- Solidity icon by Solidity Core Team, CC BY-SA 3.0
+- NodeJS icon by OpenJS Foundation, CC BY-SA 3.0
+- React icon by Facebook, CC BY-SA 3.0
+- TailwindCSS icon by Tailwind Labs, CC BY-SA 3.0
+- Bootstrap icon by Bootstrap, CC BY-SA 3.0
+- MySQL icon by Oracle, CC BY-SA 3.0
+- Azure icon by Microsoft, CC BY-SA 3.0
+*/

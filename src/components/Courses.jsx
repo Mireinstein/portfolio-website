@@ -32,9 +32,9 @@ const Courses = () => {
       <div className="container mx-auto px-4 lg:px-8 xl:max-w-6xl ">
         <h2 className="headline-2 reveal-up">Technical Coursework</h2>
         <p className=" mt-3 mb-8 max-w-[50ch] reveal-up">
-          My past and current coures
+          My present and past coures.
         </p>
-        <div className="mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 reveal-up">
+        <div className="grid gap-5 grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))] reveal-up">
           {courses.map((course, index) => (
             <CourseCard
               key={index}

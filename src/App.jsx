@@ -24,24 +24,38 @@ import Footer from './components/Footer'
 import Courses from './components/Courses'
 import Certifications from './components/Certifications'
 
-// Inside your App component
-const App = () => {
-    
-    const [theme, setTheme] = useState('light');
 
-    useEffect(() => {
-        const savedTheme = localStorage.getItem('theme') || 'light';
-        setTheme(savedTheme);
-    }, []);
+const App = () => {
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const savedTheme = localStorage.getItem('theme');
+
+    var tempTheme ="";
+
+    if (savedTheme){
+        tempTheme = savedTheme
+    }
+    else {
+        tempTheme = prefersDark ? 'dark' : 'light'
+    }
+
+    const [theme, setTheme] = useState(tempTheme);
 
     useEffect(() => {
         localStorage.setItem('theme', theme);
         document.documentElement.classList.toggle('dark', theme === 'dark');
     }, [theme]);
 
+
+    useEffect(() => {
+
+        if (savedTheme) {
+            setTheme(savedTheme);
+        }
+
+    }, []);
+
     const toggleTheme = () => {
         setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
-        // console.log("Theme changed to", theme);
     };
 
     useGSAP(() => {
