@@ -20,8 +20,29 @@ import About from "./components/About"
 import Skills from "./components/Skills"
 import Projects from "./components/Projects"
 import Contact from "./components/Contact"
+import Footer from './components/Footer'
+import Courses from './components/Courses'
+import Certifications from './components/Certifications'
 
+// Inside your App component
 const App = () => {
+    
+    const [theme, setTheme] = useState('light');
+
+    useEffect(() => {
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        setTheme(savedTheme);
+    }, []);
+
+    useEffect(() => {
+        localStorage.setItem('theme', theme);
+        document.documentElement.classList.toggle('dark', theme === 'dark');
+    }, [theme]);
+
+    const toggleTheme = () => {
+        setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
+        // console.log("Theme changed to", theme);
+    };
 
     useGSAP(() => {
         const elements = gsap.utils.toArray(".reveal-up")
@@ -44,13 +65,16 @@ const App = () => {
 
     return (
         <ReactLenis root>
-            <Header />
+            <Header theme={theme} toggleTheme={toggleTheme} />
             <main>
                 <Hero />
-                <About />
+                <About/>
                 <Skills />
-                <Projects />
-                <Contact />
+                <Projects theme={theme} />
+                <Courses />
+                <Certifications />
+                <Contact theme={theme} />
+                <Footer />
             </main>
         </ReactLenis>
     )

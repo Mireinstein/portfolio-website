@@ -7,7 +7,7 @@
 import { useRef, useEffect } from 'react'
 import PropTypes from 'prop-types'
 
-const Navbar = ({ navOpen }) => {
+const Navbar = ({ navOpen, theme, toggleTheme }) => {
     const lastActiveLink = useRef()
     const activeBox = useRef()
 
@@ -53,19 +53,35 @@ const Navbar = ({ navOpen }) => {
             className: "nav-link",
         },
         {
+            label: "Skills",
+            link: '#skills',
+            className: "nav-link",
+
+        },
+        {
             label: "Projects",
             link: '#projects',
             className: "nav-link",
         },
         {
+            label: "Courses",
+            link: '#courses',
+            className: "nav-link",
+        },
+        {
+            label: "Certifications",
+            link: '#certifications',
+            className: "nav-link",
+        },
+        {
             label: "Contact",
             link: '#contact',
-            className: "nav-link md:hidden",
+            className: "nav-link",
         }
     ]
 
     return (
-        <nav className={'navbar ' + (navOpen ? 'active' : '')}>
+        <nav className={`navbar ${navOpen ? 'active' : ''}`}>
             {
                 navItems.map(({ label, link, className, ref }, key) => (
                     <a
@@ -80,6 +96,11 @@ const Navbar = ({ navOpen }) => {
                 ))
             }
 
+            {/* Theme Toggle Button */}
+            <button onClick={toggleTheme} className="toggleBtn">
+                {theme === 'dark' ? '🌜' : '☀️'}
+            </button>
+
             {/* Active Box */}
             <div className='active-box' ref={activeBox}></div>
 
@@ -89,6 +110,8 @@ const Navbar = ({ navOpen }) => {
 
 Navbar.propTypes = {
     navOpen: PropTypes.bool.isRequired,
+    theme: PropTypes.string.isRequired,
+    toggleTheme: PropTypes.func.isRequired,
 }
 
 export default Navbar

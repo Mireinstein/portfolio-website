@@ -1,5 +1,5 @@
 /**
- * @copyright 2024 Aime Cesaire
+ * @copyright 2025 Aime Cesaire Mugishawayo
  * @license Apache-2.0
  * 
  */
@@ -16,28 +16,27 @@ const welcome_paragraph = `Hi, I’m Aime Cesaire— a dedicated problem solver 
 const aboutItems = [
     {
         label: "Projects",
-        number: 10
+        number: 12
     },
     {
-        label:"Languages",
-        number: 5
+        label:"Coding Languages",
+        number: 6
     },
     {
         label: "Years in tech",
-        number: "6",
+        number: "7",
     }
     
 ]
-
 
 const About = () => {
   return (
    <section id="about" className="section">
 
         <div className="container">
-            <div className="bg-zinc-800/50 p-7 rounded-2xl md:p-12 reveal-up">
+            <div className="p-7 rounded-2xl md:p-12 reveal-up">
 
-                <p className="text-zinc-300 mb-4 md:mb-8 md:text-xl md:max-w-[60ch] reveal-up">
+                <p className="mb-4 md:mb-8 md:text-xl md:max-w-[60ch] reveal-up">
                     {welcome_paragraph}
 
                 </p>
@@ -47,9 +46,9 @@ const About = () => {
                             <div key={key}>
                                 <div className="flex items-center md:mb-2">
                                     <span className="text-2xl font-semibold md:text-4xl">{number}</span>
-                                    <span className="text-sky-400 font-semibold md:text-3xl">+</span>
+                                    <span className="text-sky-600 font-semibold md:text-3xl">+</span>
                                 </div>
-                                <p className="text-sm text-zinc-400">{label}</p>
+                                <p className="text-sm text-zinc-900">{label}</p>
                             </div>
                         ))
                     }
