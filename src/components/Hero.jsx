@@ -11,7 +11,7 @@ const Hero = () => {
     <section id="home" className="pt-28 lg:pt-36">
       <div className="container items-center lg:grid lg:grid-cols-2 lg:gap-10">
         <div>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2">
             <figure className="img-box w-10 h-10 rounded-full">
               <a
                 href="https://www.amherst.edu"
@@ -28,8 +28,8 @@ const Hero = () => {
               </a>
             </figure>
 
-            <div className="grad-date flex items-center gap-1.5 text-sm font-bold tracking-wide">
-              <span className="relative w-2 h-2 rounded-full bg-emerald-400">
+            <div className="flex items-center gap-1.5 text-sm font-bold tracking-wide">
+              <span className="flex relative w-2 h-2 rounded-full bg-emerald-400">
                 <span className="absolute inset-0 rounded-full bg-emerald-400 animate-ping"></span>
               </span>
               Graduating in May 2025

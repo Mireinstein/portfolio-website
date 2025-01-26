@@ -34,9 +34,9 @@ const works = [
   },
   {
     title: "Phase1 - A steganography detector",
-    tags: ["Steganography", "Pixel Manipulation", "Java"],
+    tags: ["Steganography", "Pixel Manipulation", "Java", "Swing"],
     link: "https://github.com/AimeCesaireM/Steganography-Detector",
-    website: ""
+    website: "https://sourceforge.net/projects/steganography-detector/"
   },
   {
     title: "Brickbreaker Game in Unity Engine",
@@ -45,10 +45,10 @@ const works = [
     website: ""
   },
   {
-    title: "ouispar - tool suite for elliptic curve cryptography",
-    tags: ["Cryptanalysis", "Abstract Algebra", "Python"],
+    title: "energive - A statistical attack on the Vigenere cypher",
+    tags: ["Cryptanalysis", "Number theory", "Statistical analysis",  "Python"],
     link: "https://github.com/AimeCesaireM/ecc-cryptography",
-    website: ""
+    website: "https://sourceforge.net/projects/enervige/"
   },
   {
     title: "Naona- A LAN Video Chat App",
