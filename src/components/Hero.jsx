@@ -44,7 +44,7 @@ const Hero = () => {
             <ButtonPrimary
               label="Resume"
               icon="description"
-              href="./other/resume.pdf"
+              href=".//other//resume.pdf"
               download="Aime Cesaire Mugishawayo Resume.pdf"
             />
 
