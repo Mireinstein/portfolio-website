@@ -27,7 +27,7 @@ const Footer = () => {
                     </nav>
                 </div>
                 <div className="mt-4 text-center font-bold text-sm text-zinc-500">
-                    &copy; 2025 Aime Cesaire Mugishawayo. All rights reserved.
+                    &copy; 2025 Admire Madyira. All rights reserved.
                 </div>
             </div>
         </footer>

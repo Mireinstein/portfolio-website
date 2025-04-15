@@ -5,9 +5,9 @@ import CertificationCard from './CertificationCard';
 const certificationItems = [
   {
       imgSrc: "./images/az-900.svg",
-      title: "Microsoft Azure Fundamentals",
-      desc: "Cloud Computing",
-      link: "https://learn.microsoft.com/en-us/certifications/azure-fundamentals/"
+      title: "AI & ML Engineering",
+      desc: "AI & ML Engineering",
+      link: "https://www.coursera.org/professional-certificates/microsoft-ai-and-ml-engineering"
   }
 ];
 

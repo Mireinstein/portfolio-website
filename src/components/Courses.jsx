@@ -28,12 +28,6 @@ const Courses = () => {
       inProgress: true,
     },
     {
-      name: "Computer Security",
-      link: "https://www.amherst.edu/academiclife/departments/courses/2223F/COSC/COSC-383-2223F",
-      icon: "🔒",
-      inProgress: false,
-    },
-    {
       name: "Abstract Algebra",
       link: "https://www.amherst.edu/academiclife/departments/courses/2324F/MATH/MATH-350-2324F",
       icon: "🔢",
@@ -49,12 +43,6 @@ const Courses = () => {
       name: "Computer Systems",
       link: "https://www.amherst.edu/academiclife/departments/courses/2122S/COSC/COSC-171-2122S",
       icon: "🖥️",
-      inProgress: false,
-    },
-    {
-      name: "Computer Networks",
-      link: "https://www.amherst.edu/academiclife/departments/courses/2324F/COSC/COSC-283-2324F",
-      icon: "🌐",
       inProgress: false,
     },
     {
@@ -79,32 +67,14 @@ const Courses = () => {
       name: "Nonlinear Optimization",
       link: "https://www.amherst.edu/academiclife/departments/courses/2425S/MATH/MATH-294-2425S",
       icon: "📈",
-      inProgress: true,
+      inProgress: false,
     },
     {
-      name: "Data Mining",
-      link: "https://www.amherst.edu/academiclife/departments/courses/2425S/COSC/COSC-254-2425S",
-      icon: "⛏️",
-      inProgress: true,
-    },
-    {
-      name: "IBM Data Science Professional Certificate",
-      link: "https://www.coursera.org/professional-certificates/ibm-data-science#courses",
-      icon: "📊",
-      inProgress: true,
-    },
-    {
-      name: "Google Cybersecurity Professional Certificate ",
-      link: "https://www.coursera.org/professional-certificates/google-cybersecurity/",
-      icon: "🛡️",
-      inProgress: true,
-    },
-    {
-      name: "AWS DevOps Specialization",
-      link: "https://www.coursera.org/specializations/aws-devops",
-      icon: "☁️",
-      inProgress: true,
-    },
+      name: "Calculus I, II, III",
+      link: "https://www.amherst.edu/academiclife/departments/courses/",
+      icon: "📈",
+      inProgress: false,
+    }
   ];
 
   return (

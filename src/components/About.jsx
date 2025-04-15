@@ -6,17 +6,16 @@
 
 
 // Text
-const welcome_paragraph = `Hi, I’m Aime Cesaire— a dedicated problem solver with a deep fascination
-                        for how systems are built, optimized, and pushed to their limits.
+const welcome_paragraph = `Hi, I’m Admire — a dedicated problem solver with a deep fascination
+                        for how systems are built, optimized, and pushed to their limits and used for good.
                         I’m a full-stack developer with experience that spans artificial intelligence, machine learning,
-                        penetration testing, and cryptography. My background also extends into computer networks,
-                        IT infrastructure, and cloud computing. Whether I'm developing algorithms, pen-testing systems,
-                        or creating data-driven applications, I’m motivated by the drive to learn, build, and innovate.`
+                        web development. My background also extends into browser architecture and Large Language Models . Whether I'm developing algorithms, building AI and ML models,
+                        creating data-driven applications, I’m motivated by the drive to learn, build, and innovate and make an impact`
 
 const aboutItems = [
     {
         label: "Projects",
-        number: 12
+        number: 10
     },
     {
         label:"Coding Languages",
@@ -24,7 +23,7 @@ const aboutItems = [
     },
     {
         label: "Years in tech",
-        number: "7",
+        number: "5",
     }
     
 ]

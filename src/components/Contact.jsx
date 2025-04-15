@@ -9,24 +9,13 @@ const Contact = ({theme}) => {
     const socialLinks = [
         {
             icon: theme == 'dark' ? "./images/github-mark-white.png": "./images/github-mark.png",
-            href: "https://github.com/AimeCesaireM",
+            href: "https://github.com/Mireinstein",
             alt: "Github"
         },
         {
             icon: "./images/linkedin.png",
-            href: "https://www.linkedin.com/in/aime-cesaire-mugishawayo/",
+            href: "https://www.linkedin.com/in/admire-madyira/",
             alt: "Linkedin"
-        },
-        {
-            icon: "./images/handshake.png",
-            href: "https://amherst.joinhandshake.com/profiles/33363579",
-            alt: "Handshake"
-    
-        },
-        {
-            icon: "./images/substack.png",
-            href: "https://aimecesaire.substack.com",
-            alt:   "Substack"
         }
     ]
 

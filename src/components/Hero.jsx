@@ -37,7 +37,7 @@ const Hero = () => {
           </div>
 
           <h2 className="headline-1 max-w-[15ch] sm:max-w-[20ch] lg:max-w-[15ch] mt-5 mb-8 lg:mb-10">
-            Building and breaking modern systems
+            Using Technology For Good
           </h2>
 
           <div className="flex items-center gap-3">
@@ -45,7 +45,7 @@ const Hero = () => {
               label="Resume"
               icon="description"
               href=".//other//resume.pdf"
-              download="Aime Cesaire Mugishawayo Resume.pdf"
+              download="Admire Madyira Resume.pdf"
             />
 
             <ButtonPrimary
@@ -71,7 +71,7 @@ const Hero = () => {
               src="./images/hero-banner.jpg"
               width={656}
               height={800}
-              alt="Aime Cesaire"
+              alt="Admire Madyira"
               className="w-full"
             />
           </figure>

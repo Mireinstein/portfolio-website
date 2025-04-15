@@ -28,18 +28,6 @@ const skillItems = [
       link: "https://www.typescriptlang.org/"
   },
   {
-    imgSrc: "./images/flutter.png",
-    title: "Flutter",
-    desc: "Mobile Development",
-    link: "https://flutter.dev/"
-  },
-  {
-    imgSrc: "./images/solidity.svg",
-    title: "Solidity",
-    desc: "Smart Contract Development",
-    link: "https://docs.soliditylang.org/"
-  },
-  {
       imgSrc: "./images/nodejs.svg",
       title: "NodeJS",
       desc: "Backend development",
@@ -56,12 +44,6 @@ const skillItems = [
       title: "TailwindCSS",
       desc: "CSS Framework",
       link: "https://tailwindcss.com/"
-  },
-  {
-      imgSrc: "./images/bootstrap-logo.svg",
-      title: "Bootstrap",
-      desc: "CSS Framework",
-      link: "https://getbootstrap.com/"
   },
   {
       imgSrc: "./images/mysql.png",
