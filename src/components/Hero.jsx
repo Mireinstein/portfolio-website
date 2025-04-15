@@ -51,7 +51,7 @@ const Hero = () => {
             <ButtonPrimary
               label="GitHub"
               icon="code"
-              href={"https://github.com/AimeCesaireM"}
+              href={"https://github.com/Mireinstein"}
             />
 
             <ButtonOutline
